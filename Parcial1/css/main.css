@@ -300,12 +300,52 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+    /*TODO: FALTA CSS */
 
+
+    /*Alineando menú de navegación con la imagen*/
+    .show-desktop{
+        padding-top: 10px;
+    }
+
+    /*Color "rojo" en contacto*/
     .show-desktop li:last-child a{
         color: #F74442;
     }
 
-    /*TODO: FALTA CSS */
+
+    /*Reduciendo padding de parrafo*/
+    .big-hero p{
+        padding-bottom: 0;
+    }
+
+    /*Alienndo íconos hacia el centro de la big-hero image*/
+    .big-hero i{
+        margin-bottom: 2em;
+        color: #0AC693;
+        font-size: 1.5em;
+    }
+    
+    .social-links{
+        margin: 0;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .social-links i{
+        margin: 0;
+        margin-top: 0.5em;
+        width: 1.5em;
+        color: #ffffff;
+        font-size: 1em;
+
+    }
+
+    .container.post li article p{
+        line-height: 1em;
+    }
+    
+
 } 
 
 @media only screen and (min-width: 1024px) {
@@ -323,6 +363,10 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .show-desktop li:last-child a{
+        color: #F74442;
     }
 
     .big-hero p{
@@ -351,6 +395,12 @@ footer .social-links {
         margin: 0 0 0.7em 0;
         color: #D7DEE6;
     }
+
+    .green-area ul{
+        display: flex;
+    }
+
+
 
 
 

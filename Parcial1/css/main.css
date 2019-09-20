@@ -18,30 +18,36 @@ body {
     font-weight: 400;
 }
 
+/*Coloca los elementos de la clase .header repartidos de igual manera en todo su contenedor*/
 .header {
     display: flex;
     justify-content: space-between
 }
 
+/*Oculta los elementos de la clase .src-only*/
 .src-only {
     display: none;
 }
 
+/*Oculpa los elementos de la clase .hide-mobile*/
 .hide-mobile {
     display: none;
 }
 
+/*Ajusta el tamaño de la fuente, padding e interlineado de todos los elementos p presentes en el index*/
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
 
+/*Ajusta el tamaño y el margen de los elementos dentro de la clase .logo*/
 .logo {
     width: 90px;
     margin: 1em;
 }
 
+/*Ordena los elementos de la clase .options con la opción 'flex' en dirección de una fila, a su vez, agrega diseño y posición a dichos elementos*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -55,6 +61,8 @@ p{
     align-items: flex-start;
 
 }
+
+/*Aumenta el tamaño de fuente del último elemento de tipo 'i' de la clase .options*/
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -64,6 +72,7 @@ p{
     width: 150px;
 }
 
+/*Modifica atributos de los elementos 'h2' dentro de la clase .big-hero*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
@@ -71,6 +80,7 @@ p{
     margin-top: 1em ;
 }
 
+/*Modifica los elementos tipo 'p' dentro de la clase .big-hero*/
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
@@ -88,22 +98,25 @@ p{
 
 }
 
+/*Cambia color de los elementos 'a' dentro de la clase .social-links, y además ajusta su tamaño de fuente y su decoración*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
 }
 
-
+/*Cambia el color de fondo de la clase .green-area*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*Ajusta margen inferior y padding de la clase .post*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+
+/*Los elementos 'h2' dentro de la clase .post se ven modificados: pasan a ser mayúsculas, su tamaño de fuente aumenta y se ajusta el margen*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -111,16 +124,19 @@ p{
     margin: 1em;
 }
 
+/*Quita el estilo existente que puedan tener las listas no ordenadas (ul) dentro de la clase .post*/
 .post ul {
     list-style: none;
 }
 
+/*Dentro de la clase .post, ajusta el ancho y el alto de los elementos 'li' de una lista no ordenada, al igual que su margen*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
 
+/*Dentro de la clase .post, se ven modificados los artículos que se encuentran dentro de cada elemento 'li' de la lista no ordenada*/
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -129,12 +145,14 @@ p{
     padding-bottom: 2em;
 }
 
+/*Dentro de la clase .post, los elementos tipo 'img' dentor de elementos 'article', les serán ajustados su ancho y su alto*/
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
 
+/*Dentro de la clase .post, los 'h3' dentro de los elementos 'article' se ven modificados*/
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -145,6 +163,7 @@ p{
     text-overflow: ellipsis;
 }
 
+/*Dentro de la clase .post, los 'p' dentro de los elementos 'article' se ven modificados*/
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -158,6 +177,7 @@ p{
     margin-top: 2em;
 }
 
+/*Dentro de la clase .about, los 'h2' que esta contenga se verán modificados*/
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -165,10 +185,12 @@ p{
     margin: 2em;
 }
 
+/*Dentro de la clase .bio-info, los elementos 'img' se les ajusta su ancho*/
 .bio-info img{
    width: 200px;
 }
 
+/*Dentro de la clase .bio-info, los 'p' se ven modificados*/
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -177,6 +199,7 @@ p{
     letter-spacing: 2px;
 }
 
+/*Establece la clase .contact como un contenedor de tipo flex en dirección de columna*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -184,15 +207,18 @@ p{
     padding: 0px 1em;
 }
 
+/*Todos los elementos contenidos dentro la clase .contact, se les modifica su margen superior*/
 .contact * + * {
     margin-top: 1.5em;
 }
 
+/*Establace la clase .contact-form como un contenedor de tipo flex en dirección de columna*/
 .contact-form {
     display: flex;
     flex-direction: column;
 }
 
+/*Dentro de la clase .contact-form, toma los elementos tipo 'input' y 'textarea' y modifica su borde, ancho, padding y tamaño de fuente*/
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -213,6 +239,7 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
+/*Dentro de la clase .contact-form, los 'input', con su atributo type=submit, se verán modificados*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -221,19 +248,23 @@ p{
     width: 200px;
 }
 
+/*Definiendo una imagen como fondo*/
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
+/*Personalizando el color de fondo del footer y el color de la fuente en el mismo*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
 
+/*Dentro del footer, se anula el margin al contenedor de la clase .social-links*/
 footer .social-links {
     margin: 0;
 }
 
+/*Personalizando la clase .menu*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -249,17 +280,98 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+
+/*Definiendo dentro la clase .menu, los elementos 'li' como un despliegue tipo bloque*/
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
+/*Cambiando color de los elementos 'a' dentro de los 'li' de la clase .menu*/
 .menu li a {
     color: white;
     text-decoration: none;
     
 }
+
+/*Personalizando el diseño para móbiles*/
+@media only screen and (min-width: 400px){
+
+    /*Actualizando el margen de la imagen 'Isotipo'*/
+    .header img{
+        margin-left: 2em;
+    }
+
+    /*Modificando margen y el tamaño de fuente de los elementos 'i' dentro del nav*/
+    nav i{
+        margin-right: 0.5em;   
+        font-size: 30px;
+    }
+
+    /*Dentro de la clase .big-hero, a los elementos 'p' se les ajusta el tamaño de la fuente y si anula el padding inferior*/
+    .big-hero p{
+        padding-bottom: 0;
+        font-size: 1em;
+    }
+
+    /*Modificando los márgenes de la clase .social-links*/
+    .social-links{
+        margin-top: 0.8em;
+        margin-bottom: 3.5em;
+    }
+
+    /*Modificando los elementos 'i' dentro de la clase .social-links, ajustando su tamaño de fuente y su ancho*/
+    .social-links i{
+        font-size: 1.4em;
+        width: 1.2em;
+    }
+
+    /**/
+    .container.post li article{
+        width: 300px; 
+        height: 400px;
+    }
+
+    .container.post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contact-form{
+        width: 320px;
+    }
+
+    .bio-info p{
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: left;
+    }
+
+    .contact-form input[type=submit]{
+        width: 300px;
+        margin-bottom: 2em;
+    }
+
+    .contact-form input, .contact-form textarea{
+        width: 100%;   
+    }
+
+    .contact-form label{
+        font-weight: bold;
+    }
+}
+
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
@@ -301,8 +413,6 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
-    /*TODO: FALTA CSS */
-
 
     /*Alineando menú de navegación con la imagen*/
     .show-desktop{
@@ -310,7 +420,7 @@ footer .social-links {
     }
 
     /*Color "rojo" en contacto*/
-    .show-desktop li:last-child a{
+    .show-desktop li a:hover{
         color: #F74442;
     }
 
@@ -350,66 +460,12 @@ footer .social-links {
 }
 
 /*Personalizando estilo para móviles*/
-@media only screen and (min-width: 400px){
 
-    /*Actualizando el margen de la imagen 'Isotipo'*/
-    .header img{
-        margin-left: 2em;
-    }
-
-    nav i{
-        margin-right: 1em;   
-        font-size: 1em;
-    }
-
-    .big-hero p{
-        padding-bottom: 0;
-        font-size: 1em;
-    }
-
-    .social-links{
-        margin-top: 0.8em;
-        margin-bottom: 3.5em;
-    }
-
-    .social-links i{
-        font-size: 1.4em;
-        width: 1.2em;
-    }
-
-    .container.post li article{
-        width: 300px; 
-    }
-
-    .container.post li{
-        padding-left: 2em;
-    }
-
-    .contact{
-        padding-left: 2.5em;
-    }
-
-    .contact-form input[type=submit]{
-        width: 320px;
-        margin-bottom: 2em;
-    }
-
-    .contact-form input, .contact-form textarea{
-        width: 90%;   
-    }
-
-    .contact-form label{
-        font-weight: bold;
-    }
-
-
-
-}
 /*Personalizando tamaño para pantallas de 1024px*/
 @media only screen and (min-width: 1024px) {
 
 
-    .show-desktop li:last-child a{
+    .show-desktop li a:hover{
         color: #F74442;
     }
 
@@ -469,8 +525,9 @@ footer .social-links {
         padding-left: 6em;
     }
 
-    .contact-form{
+    .contact .contact-form{
         margin-bottom: 3em;
+        width: 400px;
     }
 
     .contact-form textarea{
@@ -481,13 +538,31 @@ footer .social-links {
         margin: 0;
     }
 
+    .container.post ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
 
     .container.post li article{
         width: 270px; 
+        height: 300px;
     }
 
     .container.post li{
         padding-left: 3em;
+    }
+
+    .bio-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bio-info p{
+        width: 500px;
     }
 
     
@@ -505,7 +580,7 @@ footer .social-links {
         max-width: 1440px;
     }
 
-    .show-desktop li:last-child a{
+    .show-desktop li a:hover{
         color: #F74442;
     }
 
@@ -536,8 +611,19 @@ footer .social-links {
         color: #D7DEE6;
     }
 
-    .green-area ul{
+    .container.post ul article{
+        height: 20em;
+    }
+
+    .container.post ul{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-form{
+        width: 30em;
     }
 
 

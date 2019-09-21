@@ -327,12 +327,13 @@ footer .social-links {
         width: 1.2em;
     }
 
-    /**/
+    /*Establece el tamaño de los elementos 'article' dentro de los li existentes en la clase .container.post*/
     .container.post li article{
         width: 300px; 
         height: 400px;
     }
 
+    /*Definiendo la clase .container.post como un contenedor con despliegue tipo flex*/
     .container.post {
         display: flex;
         flex-direction: column;
@@ -340,6 +341,7 @@ footer .social-links {
         align-items: center;
     }
 
+    /*Definiendo la clase .container, dentro de la clase .about, como un contenedor con despliegue tipo flex*/
     .about .container{
         display: flex;
         flex-direction: column;
@@ -347,10 +349,12 @@ footer .social-links {
         align-items: center;
     }
 
+    /*Ajustando el ancho de el contender de la clase .contact-form, dentro de la clase .contact*/
     .contact .contact-form{
         width: 320px;
     }
 
+    /*Ajustanto el ancho y el padding de los 'p' contenidos dentro del contenedor de clase .bio-info*/
     .bio-info p{
         width: 400px;
         padding-left: 30px;
@@ -358,15 +362,18 @@ footer .social-links {
         text-align: left;
     }
 
+    /*Ajustando el ancho y el margen inferior de los input con el atributo 'type'=submit*/
     .contact-form input[type=submit]{
         width: 300px;
         margin-bottom: 2em;
     }
 
+    /*Ajustando el área los elementos input y los textarea dentro de la clase .contact-form*/
     .contact-form input, .contact-form textarea{
         width: 100%;   
     }
 
+    /*Modificando el 'peso' de la fuente a negrita de los los label dentro de la clase .contact-form*/
     .contact-form label{
         font-weight: bold;
     }
@@ -376,6 +383,7 @@ footer .social-links {
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
+    /*Eliminando el estilo de lista de las ul dentro de la clase .post y definiendo el contenedor con un despligue tipo flex*/
     .post ul {
         list-style: none;
         display: flex;
@@ -383,6 +391,7 @@ footer .social-links {
         justify-content: center;
     }
     
+    /*Especificando un alto mínimo y máximo para los li de los ul dentro de la clase -post, y a su vez, especificando pargen y posición dentro del contenedor*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -390,20 +399,23 @@ footer .social-links {
         flex: 1 0 300px;
     }
 
-
+    /*Ajustando el ancho y el margen del contenedor de clase .logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
 
+    /*Definiendo el contenedor de clase ,show-desktop con un despliegue tipo bloque*/
     .show-desktop {
         display: block;
     }
 
+    /*Oculatando el contenido de la clase .hide-desktop*/
     .hide-desktop {
         display: none;
     }
 
+    /*Configurando estilo de la clase .menu*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -437,12 +449,14 @@ footer .social-links {
         font-size: 1.5em;
     }
     
+    /*Ajustando el margen y la posición de los elementos dentro del contenedor de clase .social-links*/
     .social-links{
         margin: 0;
         position: relative;
         bottom: 1em;
     }
 
+    /*Ajustando margen, ancho, color y tamaño de fuente de los elementos 'i' dentro de la clase .social-links*/
     .social-links i{
         margin: 0;
         margin-top: 0.5em;
@@ -452,14 +466,12 @@ footer .social-links {
 
     }
 
+    /*Ajustando el interlineado de los p dentro de los artículos contenidos dentro de la clase .container.post*/
     .container.post li article p{
         line-height: 1em;
     }
-    
 
 }
-
-/*Personalizando estilo para móviles*/
 
 /*Personalizando tamaño para pantallas de 1024px*/
 @media only screen and (min-width: 1024px) {
@@ -565,10 +577,6 @@ footer .social-links {
         width: 500px;
     }
 
-    
-
-
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -625,10 +633,4 @@ footer .social-links {
     .contact .contact-form{
         width: 30em;
     }
-
-
-
-
-
-
 }
